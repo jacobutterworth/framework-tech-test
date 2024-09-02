@@ -8,6 +8,20 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.hover-underline-animation {
+  @apply inline-block relative;
+}
+
+.hover-underline-animation::after {
+  @apply dark:bg-black bg-black content-[''] absolute w-full scale-x-0 h-[2px] bottom-0 left-0 origin-left transition-all ease-in-out;
+}
+
+.hover-underline-animation:hover::after {
+  @apply scale-x-100;
+}
+
+/* ty https://handinugroho.com/blog/underline-animation-css */
+
 h1 {
   font-family: Open Sans;
   font-size: 50px;
