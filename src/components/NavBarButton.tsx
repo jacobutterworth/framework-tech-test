@@ -22,7 +22,7 @@ const NavBarButton: React.FC<NavBarButtonProps> = ({
       onClick={onClick}
       disabled={disabled}
       className={cn(
-        `font-medium  hover-underline-animation`,
+        `font-medium hover-underline-animation`,
         disabled
           ? "text-gray-500 cursor-not-allowed"
           : manualTextColor && manualTextColor.length > 0
