@@ -1,36 +1,36 @@
 "use client";
+import { cn } from "@/lib/utils";
 // components/Navbar.tsx
 import { useState } from "react";
+import NavBarButton from "./NavBarButton";
 
 const Navbar: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full px-4 py-4 bg-gray-800 text-white flex justify-between items-center relative">
-      <div className="text-2xl">Cottage Retreat</div>
+    <div className="w-full px-4 py-4 text-white flex justify-between items-center relative">
+      <span className="title-text text-green-100">COTTAGE RETREAT</span>
       <div
-        className={`md:flex md:items-center md:gap-4 ${
+        className={cn(
+          `md:flex md:items-center md:gap-4 md:h-auto`,
           isOpen
-            ? "top-0 left-0 w-full h-full bg-gray-800 flex flex-col items-center justify-center"
+            ? "top-0 left-0 w-screen h-screen bg-green-100 flex flex-col"
             : "hidden"
-        } md:flex`}
+        )}
       >
-        <a href="#" className="block md:inline-block px-4 py-2">
-          Button 1
-        </a>
-        <a href="#" className="block md:inline-block px-4 py-2">
-          Button 2
-        </a>
-        <a href="#" className="block md:inline-block px-4 py-2">
-          Button 3
-        </a>
+        <NavBarButton title="Nav Button 01" />
+        <NavBarButton title="Nav Button 02" />
+        <NavBarButton title="Nav Button 03" />
       </div>
       <div className="md:hidden">
-        <button onClick={() => setIsOpen(!isOpen)} className="text-2xl">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="text-2xl text-green-100"
+        >
           &#9776;
         </button>
       </div>
-    </nav>
+    </div>
   );
 };
 
