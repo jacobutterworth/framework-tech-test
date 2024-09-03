@@ -1,5 +1,8 @@
 import Accordion from "@/components/Accordion";
 import Button from "@/components/Button";
+import FooterLinks from "@/components/footer/FooterLinks";
+import LegalLinks from "@/components/footer/LegalLinks";
+import Navbar from "@/components/NavBar";
 import NavBarButton from "@/components/NavBarButton";
 
 export default function Home() {
@@ -20,7 +23,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="flex flex-col items-center justify-center gap-4 mb-12">
+      <div className="flex flex-col items-center justify-center gap-8 mb-8">
         <h1 className="self-start text-green-100 mt-12">
           Welcome to Cottage Retreat
         </h1>
@@ -29,10 +32,8 @@ export default function Home() {
           alt="logo"
           className="self-start"
         />
-        <div className="my-12">
-          <Accordion items={accordionItems} />
-        </div>
-        <div className="gap-4 flex flex-col  justify-center">
+
+        <div className="gap-4 flex flex-col justify-center">
           <h2>We help you find the right cottage for the right job</h2>
           <p className="copy">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -80,10 +81,19 @@ export default function Home() {
             className="w-full h-auto object-cover mt-2"
           />
         </div>
-
-        <div className="self-start">
-          <Button title="CTA Button" />
+        <div className="">
+          <Accordion items={accordionItems} />
         </div>
+        <div className="self-start">
+          <Button title="Our favourites" />
+        </div>
+      </div>
+
+      <hr className="w-full border-t-2 border-white-300 my-6 px-4" />
+      <Navbar />
+      <div className="w-full flex justify-between items-center my-12">
+        <FooterLinks />
+        <LegalLinks />
       </div>
     </main>
   );
