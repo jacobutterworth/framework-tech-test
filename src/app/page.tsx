@@ -30,7 +30,7 @@ export default function Home() {
         <img
           src="https://storage.ziggyaust.in/8df366f3f2aacf21b18189ebe92239c8.jpeg"
           alt="logo"
-          className="self-start"
+          className="self-start w-full"
         />
 
         <div className="gap-4 flex flex-col justify-center">
