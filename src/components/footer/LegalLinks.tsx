@@ -1,8 +1,21 @@
 import React from "react";
+import { TextColor } from "@/types/ui";
+import { cn } from "@/lib/utils";
 
-const LegalLinks: React.FC = () => {
+type LegalLinksProps = {
+  manualTextColor?: TextColor;
+};
+
+const LegalLinks: React.FC<LegalLinksProps> = ({ manualTextColor }) => {
   return (
-    <div className="text-right md:text-green-100 text-white-100 flex flex-col gap-2 md:ml-auto">
+    <div
+      className={cn(
+        "text-right flex flex-col gap-2 md:ml-auto",
+        manualTextColor && manualTextColor.length > 0
+          ? manualTextColor
+          : "md:text-green-100 text-white-100 "
+      )}
+    >
       <span className="copy-s md:self-end">Privacy</span>
       <span className="copy-s md:self-end">Terms and Conditions</span>
     </div>

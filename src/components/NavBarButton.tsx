@@ -1,8 +1,6 @@
 import { cn } from "@/lib/utils";
 import React from "react";
-import { Colors } from "@/types/ui";
-
-export type TextColor = `text-${Colors}`;
+import { TextColor } from "@/types/ui";
 
 interface NavBarButtonProps {
   title: string;

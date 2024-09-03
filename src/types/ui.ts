@@ -20,4 +20,6 @@ type CombinedColors = `${ColorsWithLuminance}-${Luminance}`;
 
 type Colors = CombinedColors | CustomColorsKeys;
 
-export { type Colors };
+type TextColor = `text-${Colors}`;
+
+export { type TextColor };
