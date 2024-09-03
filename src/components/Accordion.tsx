@@ -44,7 +44,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
               </span>
               <span
                 className={cn(
-                  `absolute inset-0 text-2xl text-gray-500 transition-opacity duration-300 ease-in-out`,
+                  `absolute inset-0 text-2xl text-green-100 transition-opacity duration-300 ease-in-out`,
                   activeIndex === index ? "opacity-100" : "opacity-0"
                 )}
               >
