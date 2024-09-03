@@ -33,8 +33,10 @@ export default function Home() {
         />
 
         <div className="gap-4 flex flex-col justify-center">
-          <h2>We help you find the right cottage for the right job</h2>
-          <p className="copy">
+          <h2 className="text-green-100">
+            We help you find the right cottage for the right job
+          </h2>
+          <p className="copy text-green-100">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
