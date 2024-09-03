@@ -1,4 +1,5 @@
 "use client";
+import { cn } from "@/lib/utils";
 import React, { useState } from "react";
 
 interface AccordionItem {
@@ -34,25 +35,28 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
             </div>
             <div className="flex-shrink-0 relative w-6 h-6">
               <span
-                className={`absolute inset-0 text-2xl text-green-100 transition-opacity duration-300 ease-in-out ${
+                className={cn(
+                  `absolute inset-0 text-2xl text-green-100 transition-opacity duration-300 ease-in-out`,
                   activeIndex === index ? "opacity-0" : "opacity-100"
-                }`}
+                )}
               >
                 +
               </span>
               <span
-                className={`absolute inset-0 text-2xl text-gray-500 transition-opacity duration-300 ease-in-out ${
+                className={cn(
+                  `absolute inset-0 text-2xl text-gray-500 transition-opacity duration-300 ease-in-out`,
                   activeIndex === index ? "opacity-100" : "opacity-0"
-                }`}
+                )}
               >
                 −
               </span>
             </div>
           </div>
           <div
-            className={` pl-10 text-gray-600 overflow-hidden transition-all duration-300 ease-in-out ${
+            className={cn(
+              `pl-10 text-gray-600 overflow-hidden transition-all duration-300 ease-in-out`,
               activeIndex === index ? "max-h-96" : "max-h-0"
-            }`}
+            )}
           >
             <div className="overflow-y-auto copy max-h-96">{item.content}</div>
           </div>
