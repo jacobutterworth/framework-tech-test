@@ -5,7 +5,7 @@ const FooterLinks: React.FC = () => {
     <div className="copy-s text-left text-green-100">
       <div>
         <p>Company name © 2023. All rights Reserved.</p>
-        <p className="">
+        <p>
           Design by{" "}
           <span
             className={
