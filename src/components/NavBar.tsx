@@ -13,9 +13,9 @@ const Navbar: React.FC = () => {
         <span className="title-text text-green-100">COTTAGE RETREAT</span>
 
         <div className="hidden md:flex md:items-center md:gap-4">
-          <NavBarButton title="Nav Button 01" />
-          <NavBarButton title="Nav Button 02" />
-          <NavBarButton title="Nav Button 03" />
+          <NavBarButton title="Find your cottage" />
+          <NavBarButton title="List your cottage" />
+          <NavBarButton title="About us" />
         </div>
 
         <button
@@ -56,17 +56,14 @@ const Navbar: React.FC = () => {
             )}
           >
             <NavBarButton
-              title="Nav Button 01"
+              title="Find your cottage"
               manualTextColor="text-white-100"
             />
             <NavBarButton
-              title="Nav Button 02"
+              title="List your cottage"
               manualTextColor="text-white-100"
             />
-            <NavBarButton
-              title="Nav Button 03"
-              manualTextColor="text-white-100"
-            />
+            <NavBarButton title="About us" manualTextColor="text-white-100" />
           </div>
           <div className="flex flex-col gap-4 mx-9 mb-4">
             <LegalLinks />
