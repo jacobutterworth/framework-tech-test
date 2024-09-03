@@ -92,7 +92,7 @@ export default function Home() {
       <Navbar />
       <div className="w-full flex justify-between items-center my-12">
         <FooterLinks />
-        <LegalLinks />
+        <LegalLinks manualTextColor="text-green-100" />
       </div>
     </main>
   );
