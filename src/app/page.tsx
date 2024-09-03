@@ -3,7 +3,6 @@ import Button from "@/components/Button";
 import FooterLinks from "@/components/footer/FooterLinks";
 import LegalLinks from "@/components/footer/LegalLinks";
 import Navbar from "@/components/NavBar";
-import NavBarButton from "@/components/NavBarButton";
 
 export default function Home() {
   const accordionItems = [
