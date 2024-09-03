@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full px-4 py-4 text-white">
+    <nav className="w-full py-4 text-white">
       <div className="flex justify-between items-center">
         <span className="title-text text-green-100">COTTAGE RETREAT</span>
 
