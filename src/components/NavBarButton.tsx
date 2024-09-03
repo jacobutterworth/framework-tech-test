@@ -30,7 +30,8 @@ const NavBarButton: React.FC<NavBarButtonProps> = ({
           : "text-gray-800 "
       )}
     >
-      <span className="copy">{title}</span>
+      <h2 className="md:hidden">{title}</h2>
+      <span className="hidden md:inline copy">{title}</span>{" "}
     </button>
   );
 };
