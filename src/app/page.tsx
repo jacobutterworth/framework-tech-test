@@ -37,13 +37,11 @@ export default function Home() {
             We help you find the right cottage for the right job
           </h2>
           <p className="copy text-green-100">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            We specialize in matching you with cottages that fit your unique
+            needs, whether you're looking for a cozy retreat, a family getaway,
+            or a work-friendly environment. Our curated selection ensures that
+            you'll find a space where you can feel at home, enjoy the scenery,
+            and make lasting memories.
           </p>
         </div>
 
